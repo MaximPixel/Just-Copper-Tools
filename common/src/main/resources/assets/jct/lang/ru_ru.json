@@ -1,0 +1,18 @@
+{
+    "item.jct.copper_sword": "Медный меч",
+    "item.jct.copper_shovel": "Медная лопата",
+    "item.jct.copper_pickaxe": "Медная кирка",
+    "item.jct.copper_axe": "Медный топор",
+    "item.jct.copper_hoe": "Медная мотыга",
+    "block.jct.copper_hopper": "Медная воронка",
+    "block.jct.copper_item_stand": "Медный стенд для предмето",
+    "container.jct.copper_hopper": "Медная воронка",
+    "filter_type.jct.none": "Не пропускать через фильтр",
+    "filter_type.jct.item": "Фильтровать предметы по их типу",
+    "filter_type.jct.damage_boolean": "Фильтровать предметы по повреждению",
+    "filter_type.jct.damage": "Фильтровать предметы по значению повреждения",
+    "filter_type.jct.same_nbt": "Фильтровать предметы по значению NBT",
+    "filter_type.jct.same_creative_tab": "Фильтровать предметы по креативным вкладкам",
+    "filter_type.jct.same_tag": "Фильтровать предметы по тегам",
+    "filter_type.jct.class": "Фильтровать предметы по классу"
+}

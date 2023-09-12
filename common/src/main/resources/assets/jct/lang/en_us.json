@@ -1,0 +1,18 @@
+{
+    "item.jct.copper_sword": "Copper Sword",
+    "item.jct.copper_shovel": "Copper Shovel",
+    "item.jct.copper_pickaxe": "Copper Pickaxe",
+    "item.jct.copper_axe": "Copper Axe",
+    "item.jct.copper_hoe": "Copper Hoe",
+    "block.jct.copper_hopper": "Copper Hopper",
+    "block.jct.copper_item_stand": "Copper Item Stand",
+    "container.jct.copper_hopper": "Copper Item Hopper",
+    "filter_type.jct.none": "Do not pass thought filter",
+    "filter_type.jct.item": "Filter items by their type",
+    "filter_type.jct.damage_boolean": "Filter items by is damaged",
+    "filter_type.jct.damage": "Filter items by damage value",
+    "filter_type.jct.same_nbt": "Filter items by NBT value",
+    "filter_type.jct.same_creative_tab": "Filter items by creative tab",
+    "filter_type.jct.same_tag": "Filter items by tag",
+    "filter_type.jct.class": "Filter items by class"
+}

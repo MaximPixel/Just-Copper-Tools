@@ -1,0 +1,18 @@
+{
+    "item.jct.copper_sword": "Мідний меч",
+    "item.jct.copper_shovel": "Мідна лопата",
+    "item.jct.copper_pickaxe": "Мідна кирка",
+    "item.jct.copper_axe": "Мідна сокира",
+    "item.jct.copper_hoe": "Мідна мотика",
+    "block.jct.copper_hopper": "Мідна лійка",
+    "block.jct.copper_item_stand": "Мідна підставка для предметів",
+    "container.jct.copper_hopper": "Мідний предметний лійка",
+    "filter_type.jct.none": "Не проходьте через фільтр",
+    "filter_type.jct.item": "Фільтрувати предмети за їх типом",
+    "filter_type.jct.damage_boolean": "Фільтрувати предмети за наявністю пошкодження",
+    "filter_type.jct.damage": "Фільтрувати предмети за значенням пошкодження",
+    "filter_type.jct.same_nbt": "Фільтрувати предмети за значенням NBT",
+    "filter_type.jct.same_creative_tab": "Фільтрувати предмети за вкладками креативу",
+    "filter_type.jct.same_tag": "Фільтрувати предмети за тегами",
+    "filter_type.jct.class": "Фільтрувати предмети за класом"
+}

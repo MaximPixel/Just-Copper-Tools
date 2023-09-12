@@ -1,0 +1,24 @@
+
+modLoader="javafml"
+loaderVersion="[38,)"
+license="The MIT License (MIT)"
+[[mods]]
+modId="jct"
+version="0.1"
+displayName="Just Copper Tools"
+authors="MaximPixel"
+description="Copper tools with a small feature"
+logoFile="assets/jct/jct-icon.png"
+
+[[dependencies.jct]]
+modId="forge"
+mandatory=true
+versionRange="[38,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.jct]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18,1.20.1]"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,18 @@
+{
+    "item.jct.copper_sword": "Kupferschwert",
+    "item.jct.copper_shovel": "Kupferschaufel",
+    "item.jct.copper_pickaxe": "Kupferspitzhacke",
+    "item.jct.copper_axe": "Kupferaxt",
+    "item.jct.copper_hoe": "Kupferhacke",
+    "block.jct.copper_hopper": "Kupfertrichter",
+    "block.jct.copper_item_stand": "Kupferartikelständer",
+    "container.jct.copper_hopper": "Kupfer-Gegenstands-Trichter",
+    "filter_type.jct.none": "Nicht durch Filter lassen",
+    "filter_type.jct.item": "Gegenstände nach ihrem Typ filtern",
+    "filter_type.jct.damage_boolean": "Gegenstände nach Beschädigung filtern",
+    "filter_type.jct.damage": "Gegenstände nach Schadenswert filtern",
+    "filter_type.jct.same_nbt": "Gegenstände nach NBT-Wert filtern",
+    "filter_type.jct.same_creative_tab": "Gegenstände nach Kreativregister filtern",
+    "filter_type.jct.same_tag": "Gegenstände nach Tag(s) filtern",
+    "filter_type.jct.class": "Gegenstände nach Klasse filtern"
+}

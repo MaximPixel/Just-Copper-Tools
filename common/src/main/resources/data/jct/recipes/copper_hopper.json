@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XYX",
+        "X#X",
+        " X "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:hopper"
+        },
+        "X": {
+            "item": "minecraft:copper_ingot"
+        },
+        "Y": {
+            "item": "minecraft:comparator"
+        }
+    },
+    "result": {
+        "item": "jct:copper_hopper"
+    }
+}

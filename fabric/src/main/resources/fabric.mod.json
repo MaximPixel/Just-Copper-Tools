@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "jct",
+  "version": "${version}",
+
+  "name": "Just Copper Tools",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/jct/jct-icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.maximpixel.jct.fabric.JustCopperToolsFabric"
+    ]
+  },
+  "mixins": [
+    "jct.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": ">=1.19.2",
+    "architectury": ">=9.1.0"
+  }
+}

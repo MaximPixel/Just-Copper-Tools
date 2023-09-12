@@ -1,0 +1,18 @@
+{
+    "item.jct.copper_sword": "pɹoʍS ɹǝddoƆ",
+    "item.jct.copper_shovel": "lǝʌoɥS ɹǝddoƆ",
+    "item.jct.copper_pickaxe": "ǝxɐʞɔᴉԀ ɹǝddoƆ",
+    "item.jct.copper_axe": "ǝx∀ ɹǝddoƆ",
+    "item.jct.copper_hoe": "ǝoH ɹǝddoƆ",
+    "block.jct.copper_hopper": "ɹǝddoH ɹǝddoƆ",
+    "block.jct.copper_item_stand": "puɐʇS ɯǝʇI ɹǝddoƆ",
+    "container.jct.copper_hopper": "ɹǝddoH ɯǝʇI ɹǝddoƆ",
+    "filter_type.jct.none": "ɹǝʇlᴉɟ ʇɥƃnoɥʇ ssɐd ʇou oᗡ",
+    "filter_type.jct.item": "ǝdʎʇ ɹᴉǝɥʇ ʎq sɯǝʇᴉ ɹǝʇlᴉℲ",
+    "filter_type.jct.damage_boolean": "pǝƃɐɯɐp sᴉ ʎq sɯǝʇᴉ ɹǝʇlᴉℲ",
+    "filter_type.jct.damage": "ǝnlɐʌ ǝƃɐɯɐp ʎq sɯǝʇᴉ ɹǝʇlᴉℲ",
+    "filter_type.jct.same_nbt": "Filter items by NBT value",
+    "filter_type.jct.same_creative_tab": "ǝnlɐʌ ┴qN ʎq sɯǝʇᴉ ɹǝʇlᴉℲ",
+    "filter_type.jct.same_tag": "ƃɐʇ ʎq sɯǝʇᴉ ɹǝʇlᴉℲ",
+    "filter_type.jct.class": "ssɐlɔ ʎq sɯǝʇᴉ ɹǝʇlᴉℲ"
+}

@@ -1,0 +1,18 @@
+{
+    "item.jct.copper_sword": "Copurr Sord",
+    "item.jct.copper_shovel": "Copurr shavel",
+    "item.jct.copper_pickaxe": "copurr pixax",
+    "item.jct.copper_axe": "Copurr Ax",
+    "item.jct.copper_hoe": "Copurr hoE",
+    "block.jct.copper_hopper": "smat huperr",
+    "container.jct.copper_hopper": "copur item hopur",
+    "filter_type.jct.none": "YOU SHALL NOT PASS",
+    "filter_type.jct.item": "iron = iron",
+    "filter_type.jct.damage_boolean": "not new = not new",
+    "filter_type.jct.damage": "Filter items by damage valyoo",
+    "filter_type.jct.same_nbt": "Filter items by NBT valyoo",
+    "filter_type.jct.same_creative_tab": "filter items by tabz of creativiti",
+    "filter_type.jct.same_tag": "Fltr itams by tagz",
+    "filter_type.jct.class": "Filtr iams by class"
+
+}

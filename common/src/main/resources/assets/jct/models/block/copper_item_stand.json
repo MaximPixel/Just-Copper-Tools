@@ -1,0 +1,63 @@
+{
+	"parent": "block/block",
+	"display": {
+		"gui": {
+			"rotation": [
+				30,
+				225,
+				0
+			],
+			"translation": [
+				0,
+				1.25,
+				0
+			],
+			"scale": [
+				0.625,
+				0.625,
+				0.625
+			]
+		}
+	},
+	"textures": {
+		"0": "jct:block/copper_item_stand",
+		"1": "jct:block/copper_item_stand_top",
+		"particle": "jct:block/copper_item_stand"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 2, 15],
+			"faces": {
+				"north": {"uv": [1, 14, 15, 16], "texture": "#0"},
+				"east": {"uv": [1, 14, 15, 16], "texture": "#0"},
+				"south": {"uv": [1, 14, 15, 16], "texture": "#0"},
+				"west": {"uv": [1, 14, 15, 16], "texture": "#0"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#1", "cullface": "down"}
+			}
+		},
+		{
+			"from": [1, 9, 1],
+			"to": [15, 11, 15],
+			"faces": {
+				"north": {"uv": [1, 5, 15, 7], "texture": "#0"},
+				"east": {"uv": [1, 5, 15, 7], "texture": "#0"},
+				"south": {"uv": [1, 5, 15, 7], "texture": "#0"},
+				"west": {"uv": [1, 5, 15, 7], "texture": "#0"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#1"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#1"}
+			}
+		},
+		{
+			"from": [2, 2, 2],
+			"to": [14, 9, 14],
+			"faces": {
+				"north": {"uv": [2, 7, 14, 14], "texture": "#0"},
+				"east": {"uv": [2, 7, 14, 14], "texture": "#0"},
+				"south": {"uv": [2, 7, 14, 14], "texture": "#0"},
+				"west": {"uv": [2, 7, 14, 14], "texture": "#0"}
+			}
+		}
+	]
+}

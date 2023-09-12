@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "jct:block/copper_hopper"
+    },
+    "facing=east": {
+      "model": "jct:block/copper_hopper",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "jct:block/copper_hopper"
+    },
+    "facing=south": {
+      "model": "jct:block/copper_hopper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jct:block/copper_hopper",
+      "y": 270
+    }
+  }
+}
