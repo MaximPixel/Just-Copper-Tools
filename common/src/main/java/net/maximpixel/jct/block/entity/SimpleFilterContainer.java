@@ -5,7 +5,7 @@ import net.minecraft.world.item.ItemStack;
 public class SimpleFilterContainer implements FilterContainer {
 
     protected ItemStack filterItem = ItemStack.EMPTY;
-    protected FilterType filterType = FilterTypes.NONE;
+    protected FilterType filterType = FilterTypes.ITEM;
 
     @Override
     public ItemStack getFilterItem() {

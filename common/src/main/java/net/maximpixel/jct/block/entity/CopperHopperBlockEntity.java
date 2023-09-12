@@ -323,7 +323,7 @@ public class CopperHopperBlockEntity extends RandomizableContainerBlockEntity im
     protected int cooldownTime;
     protected long tickedGameTime;
     protected ItemStack filterItem = ItemStack.EMPTY;
-    protected FilterType filterType = FilterTypes.NONE;
+    protected FilterType filterType = FilterTypes.ITEM;
 
     public CopperHopperBlockEntity(BlockPos blockPos, BlockState blockState) {
         this(JustCopperTools.COPPER_HOPPER_BLOCK_ENTITY_TYPE.get(), blockPos, blockState);

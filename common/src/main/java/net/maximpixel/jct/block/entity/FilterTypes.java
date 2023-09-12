@@ -112,4 +112,9 @@ public enum FilterTypes implements FilterType {
         FilterType[] values = values();
         return values[(ordinal() + values.length - 1) % values.length];
     }
+
+    @Override
+    public String getName() {
+        return name();
+    }
 }

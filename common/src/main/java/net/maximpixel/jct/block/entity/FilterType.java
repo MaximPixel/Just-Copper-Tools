@@ -9,4 +9,5 @@ public interface FilterType {
     Collection<ItemStack> getDisplayItems();
     FilterType getNext();
     FilterType getPrev();
+    String getName();
 }

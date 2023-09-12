@@ -14,10 +14,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.HopperMenu;
-import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.item.ItemStack;
 
-import java.util.List;
+import java.util.Collection;
 
 @Environment(EnvType.CLIENT)
 public class CopperHopperScreen extends HopperScreen {
@@ -25,7 +24,7 @@ public class CopperHopperScreen extends HopperScreen {
     public static final ResourceLocation TEXTURE = new ResourceLocation(JustCopperTools.MODID, "textures/gui/container/copper_hopper.png");
 
     private int filterItemX, filterItemY;
-    private int filterTypeSwitchX, filterTypeSwitchY;
+    private int filterTypeIconX, filterTypeIconY;
     private int nextFilterX, nextFilterY;
     private int prevFilterX, prevFilterY;
 
@@ -36,22 +35,22 @@ public class CopperHopperScreen extends HopperScreen {
     @Override
     protected void init() {
         super.init();
-        filterItemX = 44 - 20;
+        filterItemX = 22;
         filterItemY = 20;
-        filterTypeSwitchX = 0;
-        filterTypeSwitchY = 0;
+        filterTypeIconX = 0;
+        filterTypeIconY = 18;
         nextFilterX = 0;
-        nextFilterY = -18;
+        nextFilterY = 36 - 8;
         prevFilterX = 0;
-        prevFilterY = 18;
+        prevFilterY = 8;
     }
 
     @Override
     public void render(GuiGraphics guiGraphics, int i, int j, float f) {
         super.render(guiGraphics, i, j, f);
         FilterType filterType = ((CopperHopperMenu) menu).getFilterContainer().getFilterType();
-        if (isHovering(filterTypeSwitchX, filterTypeSwitchY, 16, 16, i, j)) {
-            guiGraphics.renderTooltip(font, Component.empty().append(filterType.toString()), i, j);
+        if (isHovering(filterTypeIconX, filterTypeIconY, 16, 16, i, j)) {
+            guiGraphics.renderTooltip(font, Component.translatable("filter_type.jct." + filterType.getName().toLowerCase()), i, j);
         }
     }
 
@@ -67,8 +66,8 @@ public class CopperHopperScreen extends HopperScreen {
         if (filterItem.isEmpty()) {
             guiGraphics.blit(TEXTURE, filterItemX, filterItemY, 0F, 0F, 16, 16, 64, 64);
         }
-        guiGraphics.blit(TEXTURE, nextFilterX - 1, nextFilterY - 1, 18F + 16F, 16F, 18, 18, 64, 64);
-        guiGraphics.blit(TEXTURE, prevFilterX - 1, prevFilterY - 1, 18F, 16F, 18, 18, 64, 64);
+        guiGraphics.blit(TEXTURE, nextFilterX - 1, nextFilterY - 1, 18F, 16F, 18, 18, 64, 64);
+        guiGraphics.blit(TEXTURE, prevFilterX - 1, prevFilterY - 1, 18F + 18F, 16F, 18, 18, 64, 64);
         guiGraphics.pose().popPose();
 
         guiGraphics.pose().pushPose();
@@ -82,21 +81,19 @@ public class CopperHopperScreen extends HopperScreen {
         if (isHovering(filterItemX, filterItemY, 16, 16, i, j)) {
             guiGraphics.fillGradient(RenderType.guiOverlay(), filterItemX, filterItemY, filterItemX + 16, filterItemY + 16, -2130706433, -2130706433, 0);
         }
-        if (isHovering(filterTypeSwitchX, filterTypeSwitchY, 16, 16, i, j)) {
-            guiGraphics.fillGradient(RenderType.guiOverlay(), filterTypeSwitchX, filterTypeSwitchY, filterTypeSwitchX + 16, filterTypeSwitchY + 16, -2130706433, -2130706433, 0);
-        }
         FilterType filterType = ((CopperHopperMenu) menu).getFilterContainer().getFilterType();
-        guiGraphics.drawString(font, filterType.toString(), 0, 0, 4210752, false);
         guiGraphics.pose().popPose();
 
         guiGraphics.pose().translate(leftPos, topPos, 100F);
-        int x = -5;
-        int y = 0;
-        for (ItemStack displayItem : filterType.getDisplayItems()) {
+        Collection<ItemStack> displayItems = filterType.getDisplayItems();
+
+        int x = filterTypeIconX;
+        int y = filterTypeIconY;
+
+        for (ItemStack displayItem : displayItems) {
             guiGraphics.renderItem(displayItem, x, y, x + y * imageWidth);
             guiGraphics.renderItemDecorations(font, displayItem, x, y, null);
             x += 10;
-            y += 0;
         }
         guiGraphics.pose().popPose();
     }
@@ -113,10 +110,14 @@ public class CopperHopperScreen extends HopperScreen {
             return true;
         }
 
-        if (isHovering(filterTypeSwitchX, filterTypeSwitchY, 16, 16, d, e)) {
+        if (isHovering(nextFilterX, nextFilterY, 16, 16, d, e)) {
             filterContainer.setFilterType(filterContainer.getFilterType().getNext());
             new ServerboundCopperHopperPacket(filterContainer.getFilterItem(), filterContainer.getFilterType()).sendToServer();
-            return true;
+        }
+
+        if (isHovering(prevFilterX, prevFilterY, 16, 16, d, e)) {
+            filterContainer.setFilterType(filterContainer.getFilterType().getPrev());
+            new ServerboundCopperHopperPacket(filterContainer.getFilterItem(), filterContainer.getFilterType()).sendToServer();
         }
 
         return super.mouseClicked(d, e, i);

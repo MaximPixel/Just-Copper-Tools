@@ -87,7 +87,7 @@ public abstract class JustCopperTools  {
 			COPPER_PICKAXE = regI("copper_pickaxe", () -> new PickaxeItem(COPPER_TIER, 1, -2.8F, new Item.Properties())),
 			COPPER_AXE = regI("copper_axe", () -> new AxeItem(COPPER_TIER, 6F, -3.1F, new Item.Properties())),
 			COPPER_HOE = regI("copper_hoe", () -> new HoeItem(COPPER_TIER, -2, -1F, new Item.Properties())),
-			COPPER_SWORD = regI("copper_sword", () -> new ShovelItem(COPPER_TIER, 3, -24F, new Item.Properties()));
+			COPPER_SWORD = regI("copper_sword", () -> new SwordItem(COPPER_TIER, 3, -24F, new Item.Properties()));
 	public static final RegistrySupplier<Block> COPPER_HOPPER = regB("copper_hopper", () -> new CopperHopperBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(3F, 4.8F).sound(SoundType.METAL).noOcclusion())),
 			COPPER_ITEM_STAND = regB("copper_item_stand", () -> new CopperItemStandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(3F, 4.8F).sound(SoundType.METAL).noOcclusion()));
 	public static final RegistrySupplier<RecipeSerializer<RepairCopperToolRecipe>>
