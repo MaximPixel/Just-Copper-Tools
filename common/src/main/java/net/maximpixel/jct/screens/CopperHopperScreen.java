@@ -84,6 +84,7 @@ public class CopperHopperScreen extends HopperScreen {
         FilterType filterType = ((CopperHopperMenu) menu).getFilterContainer().getFilterType();
         guiGraphics.pose().popPose();
 
+        guiGraphics.pose().pushPose();
         guiGraphics.pose().translate(leftPos, topPos, 100F);
         Collection<ItemStack> displayItems = filterType.getDisplayItems();
 
